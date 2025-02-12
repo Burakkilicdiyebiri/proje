@@ -1,0 +1,237 @@
+<style>
+    body
+    {
+        background-image: url(resimler/arkaplan.jpg);
+        width: 1900px;
+    }
+
+    .baslık
+    {
+        font-size: 25pt;
+        text-align: center;
+        color: white;
+        background-color: blue;
+    }
+    .baslık2
+    {
+        font-size: 25pt;
+        text-align: center;
+        color: white;
+        background-color: blue;
+    }
+
+    .dikey
+    {
+        position: absolute;
+        top: 100px;
+        width: 215px;
+        height: 450px;
+        border-bottom-left-radius: 20px;
+        border-top-left-radius: 20px;
+        border-bottom-right-radius: 20px;
+       
+    }
+
+    .dikey a
+    {
+        width: 200px;
+        display: block;
+        text-decoration: none;
+        font-size: x-large;
+        color: white;
+        background-color: darkblue;
+        font-family: 'Comic Sans Ms';
+        border-right: 5px solid black;
+        border-bottom: 5px solid black;
+        border-radius: 20px;
+        padding-left:5px ;
+        margin-top: 5px;
+    }
+
+    .dikey a:hover
+    {
+       font-weight: bold;
+       background-color: red;
+       border-right: 5px solid lightgreen;
+       border-bottom: 5px solid lightgreen;
+    }
+
+    .yatay 
+    {
+        padding-top: -15px;
+        position: absolute;
+        top: 100px;
+        left: 220px;
+        width: 980px;
+        height: 55px;
+        border-top-right-radius: 20px;
+        border-bottom-right-radius: 20px;
+    }
+
+    .yatay a
+    {
+        margin-right: 5px;
+        display: block;
+        float: left;
+        text-align: center;
+        width:180px;
+        text-decoration: none;
+        font-size: x-large;
+        color: white;
+        background-color: darkblue;
+        font-family: 'Comic Sans Ms';
+        border-right: 5px solid black;
+        border-bottom: 5px solid black;
+        border-radius: 20px;
+        margin-top: 5px;
+    }
+
+    .yatay a:hover
+    {
+       font-weight: bold;
+       background-color: red;
+       border-right: 5px solid lightgreen;
+       border-bottom: 5px solid lightgreen;
+    }
+
+    .sari
+    {
+        padding: 5px;
+        width: 200px;
+        height: 130px;
+        background-color: lightgreen;
+        color: black;
+        border-radius: 20px;
+        font-style: italic;
+    }
+
+    .i1,.i2
+    {
+        width: 190px;
+        height: 18px;
+        border-radius: 15px;
+        background-color: lightblue;
+        color: red;
+        font-size: 10pt;
+        font-family: 'Courier New';
+    }
+
+    .i1:focus,.i2:focus
+    {
+        font-weight: bold;
+        background-color: white;
+    }
+
+    .btn1
+    {
+        background-color: gray;
+        color: darkblue;
+        font-weight: bold;
+        font-style: italic;
+        border-radius: 10px;
+        position: absolute;
+        top: 370px;
+        left: 50px;
+    }
+
+    .btn2
+    {
+        background-color: gray;
+        color: darkblue;
+        font-weight: bold;
+        font-style: italic;
+        border-radius: 10px;
+        position: absolute;
+        top: 370px;
+        left: 110px;
+    }
+
+    .btn2:hover,.btn1:hover
+    {
+        color: white;
+        background-color: blue;
+    }
+
+    .simge1
+    {
+        width: 50px;
+        height: 50px;
+        position: absolute;
+        top: 200px;
+        right: 350px;
+    }
+
+    .simge2
+    {
+        width: 50px;
+        height: 50px;
+        position: absolute;
+        top: 260px;
+        right: 350px;
+    }
+
+    .simge3
+    {
+        width: 50px;
+        height: 50px;
+        position: absolute;
+        top: 320px;
+        right: 350px;
+    }
+
+    .simge4
+    {
+        background-color: white;
+        width: 50px;
+        height: 50px;
+        position: absolute;
+        top: 380px;
+        right: 350px;
+    }
+
+    .asa
+    {
+        text-align: center;
+        font-size: xx-large;
+        width: 1910px;
+        color: white;
+        background-color: blue;
+        position:absolute;
+        top:650px;
+    }
+
+</style>
+<body>
+    <div class="baslık">Sinsan Borsa İstanbul Mesleki Ticaret Ve Anadolu Lisesi</div>
+    <div class="baslık2">Bilişim Teknolojileri Alanı</div>
+    <div class="yatay">
+        <a href="ders_programı.html" target="cerceve">Ders Programı</a>
+        <a href="galeri.html" target="cerceve">Galeri</a>
+        <a href="alanlarımız.html" target="cerceve">Alanlarımız</a>
+        <a href="#" target="cerceve">Hakkımızda</a>
+        <a href="iletişim.html" target="cerceve">İletişim</a>
+    </div>
+    <div class="dikey">
+        <a href="index.html">Ana Sayfa</a>
+        <a href="#">Ders Programı</a>
+        <a href="#">Galeri</a>
+        <a href="#">Alanlarımız</a>
+        <a href="#">Hakkımızda</a>
+        <a href="#">İletişim</a>
+        <div class="sari"> 
+            Kullanıcı Adı
+            <input type="text" class="i1">
+            Parola
+            <input type="password" class="i2">
+            <button class="btn1">Giriş</button> <Button class="btn2">İptal</Button>
+        </div>
+    </div>
+        <img src="resimler/facebook.png" class="simge1">
+        <img src="resimler/instagram.png" class="simge2">
+        <img src="resimler/whatsapp.png" class="simge3">
+        <img src="resimler/youtube.png" class="simge4">
+        <iframe src="resimler/okul.jpg" name="cerceve"style="width: 800px;height: 450px;position: absolute;top:160px;left: 230px;"></iframe>
+
+        <div class="asa"> Web Tasarım Ve Programlama Dersi 1.Dönem 2.Yazılı Sınavı </div>
+</body>
+</html>

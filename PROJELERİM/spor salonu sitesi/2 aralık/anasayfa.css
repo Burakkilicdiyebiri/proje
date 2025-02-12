@@ -1,0 +1,141 @@
+*{
+    box-sizing: border-box;
+}
+html{
+    font-size: 62.5%;/*1rem = 10px*/
+}
+body,h1,h2,u1{
+    margin: 0;
+    padding: 0;
+}
+ul{
+    list-style: none;
+}
+
+/***********/
+body{
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+
+}
+.arkaplan{
+    background-color: cornflowerblue;
+
+}
+.kapsayici{
+    width: 960px;
+    margin:0 auto;
+
+}
+.ust{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    min-height: 200px;
+
+}
+.ust .logo{
+    text-align: center;
+    color: rgb(221, 10, 10);
+}
+.ust .logo h1{
+    font-size: 4rem;
+    letter-spacing: .5rem;
+
+}
+.ust .logo h1::first-letter{
+    background-color: rgb(17, 13, 7);
+
+}
+.ust .logo h1:hover::first-letter{
+    background-color: aquamarine;
+    color: white;
+
+}
+.ust .logo h2{
+    font-size: 2.4rem;
+
+}
+.ust .menu ul{
+    display: flex;
+}
+
+.ust .menu ul li{
+    margin: 0 1rem;
+
+}
+.ust .menu ul a{
+    color: rgb(238, 138, 8);
+    text-decoration: none;
+    font-size: 1.8rem;
+    padding: 0 2rem;
+}
+.ust .menu ul a:hover{
+    color: burlywood;
+
+}
+
+.orta .bolum1{
+    margin-top: 20px;
+    border: 10px solid blue;
+    padding: 20px;
+
+}
+.orta .bolum1 img{
+    display: block;
+    width: 100%;
+}
+.orta .bolum2{
+    margin-top: 20px;
+    display: flex;
+    justify-content: space-between;
+
+}
+
+.orta .bolum2 .kutu{
+    flex-basis: 290px;
+}
+.orta .bolum2 .kutu h2{
+    font-size: 2rem;
+}
+.orta .bolum2 .kutu p{
+    font-size: 1.6rem;
+}
+.orta .bolum3{
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+}
+.orta .bolum3 h1{
+    font-size: 2.5rem;
+
+}
+.orta .bolum3 p{
+    font-size: 1.6rem;
+
+}
+.alt{
+    margin-top: 20px;
+    padding: 20px 0;
+    display: flex;
+    gap: 20px;
+
+}
+.alt .baglanti{
+    flex-grow: 1;
+}
+.alt .baglanti ul li{
+    border-bottom: dotted 1px chocolate;
+    margin: 5px 0;
+}
+.alt .baglanti a{
+    font-size: 1.6rem;
+    text-decoration: none;
+    color: chocolate;
+}
+.cizgi{
+    border-top: dotted 1px chocolate;
+    margin: 20px 0;
+}
+.alt-kenar-10{
+    border-bottom: 10px solid chocolate;
+}

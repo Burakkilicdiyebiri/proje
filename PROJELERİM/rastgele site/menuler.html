@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        
+        .menu
+			{
+				list-style:none;
+				margin:0; padding:0;
+				
+			}
+			
+			.menu li
+			{
+				margin:5px;
+			}
+			  
+			.menu a
+			{
+				display:block;
+				width:150px;
+				text-decoration:none;
+				color:#606;
+				font-weight:bold;
+				padding:5px;
+				background:#FC9;
+				border-left:5px solid #933;
+				border-right:5px solid #933;
+				line-height:25px;
+			  }
+			  
+			.menu a:hover
+			{
+				margin-left:5px;
+				border-left:5px solid #004;
+				border-right:5px solid #004;
+				color:#004;
+			}
+       
+            #ustbanner{
+                width: 100%;
+                height: 110px;
+
+            }
+			#ustlinkler{
+				margin-top: 10px;
+				margin-bottom: 30px;
+				
+			}
+
+#ustlinkler .menu li{
+	
+			float: left;
+				margin:5px;
+			
+}
+#orta{
+	padding: 20px;
+	margin-top:50px;
+}
+#ortasol{
+	float: left;
+	width: 180px;
+	height: 500px;
+}
+#ortabolum{
+	border-top:3px dashed rgb(48, 48, 48);
+	border-bottom:3px dashed rgb(48, 48, 48);
+	float: left;
+	margin-left: 20px;
+	width: 680px;
+	height: 700px;
+	background-color: rgb(250, 248, 248);
+	padding:20px;
+}
+#ortabolum p.altyazi{
+	font-size: 20px;
+	color:#000000;
+	line-height: 30px;
+	font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+
+}
+#ortabolum p.altyazi::first-letter{font-size: 45px;}
+p.altyazi::before{content: "SİNCAN BORSA İMKB LİSESİ"; 
+	color:red; }
+p.altyazi::after{content: "SİNCAN BORSA İMKB LİSESİ"; 
+color:blue; }
+#ortasag{
+	float: left;
+	margin-left: 20px;
+	width: 280px;
+	height: 500px;
+	background-color: #933;
+}
+#ustlinkler hr{
+	clear: both;
+	border-bottom: 10px solid #000;
+}
+#alt{
+	clear: both;
+	float: left;
+	width: 100%;
+	height: 240px;
+	margin-top: 20px;
+	background-color: black;
+}
+/* PROFİL KARTLARI YANYANA*/
+.kart{
+ width: 250px; height:auto; background-color: #47b7df;  
+ color:white; border-radius: 10px; text-align: center;  
+display: inline-block;  margin-right:20px;
+ box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
+     }
+ .profilSablon{
+ position: relative; width: 250px; height: 200px;
+ background: url(yildizlar.jpg);
+ background-size: 150px 100px; background-position: center; 
+ border-top-left-radius: 10px;
+ border-top-right-radius: 10px;
+   }     
+.profilResim{
+ position: absolute;  left:20px;   top:25px;
+ width: 200px; height: 200px; border-radius: 25px;
+ border:2px solid white;   z-index: 2;
+            }
+ .kart p{ font-size: 20px;  margin-top: 30px; }
+ .kart b{ font-size: 12px; }
+ .kart hr{ width: 200px; height:5px;margin-left:25px; background-color: azure; }
+ /* PROFİL KARTLARI YANYANA*/
+
+/*arama kutusu yapımı*/
+input[type=text] {
+  background-color: white;
+  height: 30px;
+ width: 200px; 
+  background-image: url('searchicon.png');
+  background-position: 10px 10px;
+  background-repeat: no-repeat;
+  padding-left: 40px;
+}
+button{
+	background-color: #933;
+	color: #ffffff;
+	font-size: 16px;
+	padding: 5px;
+	width: 60px;
+	height: 30px;
+	border: none;
+	transition:0.4s all ;
+}
+button:hover{
+	transform: scale(1.1);
+	
+}
+
+    </style>
+
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css" >
+
+</head>
+<body>
+    <div id="ustbanner">
+<img src="https://picsum.photos/1500/110" alt="">
+
+    </div>
+	<div id="ustlinkler">
+		
+		<ul class="menu">
+			<li><a href="menuler.html">ANASAYFA</a></li>
+			<li><a href="#">PROJELER</a></li>
+			<li><a href="#">REFERANSLAR</a></li>
+			<li><a href="#">HAKKINDA</a></li>
+			<li><a href="iletisim.html">İLETİŞİM</a></li>
+		</ul>
+		<form action="">
+			<input type="text" name="" id="" placeholder="arama yapınız...">
+			
+ 
+			<button><i class="fa fa-search"></i></button>
+		</form>
+		<hr>
+		</div>
+	<div id="orta">
+
+<div id="ortasol">
+
+
+
+	
+    <ul class="menu">
+        <li><a href="#">ANASAYFA</a></li>
+        <li><a href="#">PROJELER</a></li>
+        <li><a href="#">REFERANSLAR</a></li>
+        <li><a href="#">HAKKINDA</a></li>
+        <li><a href="#">İLETİŞİM</a></li>
+    </ul>
+</div>
+<div id="ortabolum">
+
+	<div class="kart">
+		<div class="profilSablon"> <img src="https://picsum.photos/250/250" class="profilResim"> </div>  
+	   <p><b>Personel 1</b><br> Personel ile ilgili bilgiler buraya yazılacaktır.</p><hr>
+		</div>
+	
+		<div class="kart">
+			<div class="profilSablon"> <img src="https://picsum.photos/250/250" class="profilResim"> </div>  
+		   <p><b>Personel 1</b><br> Personel ile ilgili bilgiler buraya yazılacaktır.</p><hr>
+			</div>
+		<p class="altyazi">
+Lorem ipsum dolor sit amet consectetur,
+ adipisicing elit. Quidem voluptatem eos 
+ repellendus at sapiente. Aperiam voluptas culpa tenetur, officia 
+ullam quas maiores aspernatur incidunt ipsam rerum sequi aliquid.
+ Nisi, dolores.
+ Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt quibusdam deserunt iure
+  eius sequi minus ratione quaerat dolores
+  dolore fugiat! Totam nemo natus molestias itaque tenetur delectus facere quidem facilis.
+
+			
+		</p>
+			
+
+
+</div>
+<div id="ortasag">
+
+</div>
+<div id="alt">
+
+</div>
+</div>
+</body>
+</html>

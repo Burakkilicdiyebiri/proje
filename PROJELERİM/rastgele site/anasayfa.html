@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        
+        .menu
+			{
+				list-style:none;
+				margin:0; padding:0;
+				
+			}
+			
+			.menu li
+			{
+				margin:5px;
+			}
+			  
+			.menu a
+			{
+				display:block;
+				width:150px;
+				text-decoration:none;
+				color:#606;
+				font-weight:bold;
+				padding:5px;
+				background:#FC9;
+				border-left:5px solid #933;
+				border-right:5px solid #933;
+				line-height:25px;
+			  }
+			  
+			.menu a:hover
+			{
+				margin-left:5px;
+				border-left:5px solid #004;
+				border-right:5px solid #004;
+				color:#004;
+			}
+       
+            #ustbanner{
+                width: 100%;
+                height: 110px;
+
+            }
+			#ustlinkler{
+				margin-top: 10px;
+				margin-bottom: 30px;
+				
+			}
+
+#ustlinkler .menu li{
+	
+			float: left;
+				margin:5px;
+			
+}
+#orta{
+	padding: 20px;
+	margin-top:50px;
+}
+#ortasol{
+	float: left;
+	width: 180px;
+	height: 500px;
+}
+#ortabolum{
+	border-top:3px dashed rgb(48, 48, 48);
+	border-bottom:3px dashed rgb(48, 48, 48);
+	float: left;
+	margin-left: 20px;
+	width: 680px;
+	height: 700px;
+	background-color: rgb(250, 248, 248);
+	padding:20px;
+}
+#ortabolum p.altyazi{
+	font-size: 20px;
+	color:#000000;
+	line-height: 30px;
+	font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+
+}
+#ortabolum p.altyazi::first-letter{font-size: 45px;}
+
+#ortasag{
+	float: left;
+	margin-left: 20px;
+	width: 280px;
+	height: 500px;
+	background-color: #933;
+}
+#ustlinkler hr{
+	clear: both;
+	border-bottom: 10px solid #000;
+}
+#alt{
+	clear: both;
+	float: left;
+	width: 100%;
+	height: 240px;
+	margin-top: 20px;
+	background-color: black;
+}
+
+
+
+/*arama kutusu yapımı*/
+input[type=text] {
+  background-color: white;
+  height: 30px;
+ width: 200px; 
+  background-image: url('searchicon.png');
+  background-position: 10px 10px;
+  background-repeat: no-repeat;
+  padding-left: 40px;
+}
+button{
+	background-color: #933;
+	color: #ffffff;
+	font-size: 16px;
+	padding: 5px;
+	width: 60px;
+	height: 30px;
+	border: none;
+	transition:0.4s all ;
+}
+button:hover{
+	transform: scale(1.1);
+	
+}
+
+
+.tasiyici input[type=text], select, textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  margin-top: 6px;
+  margin-bottom: 16px;
+  resize: vertical;
+}
+
+.tasiyici input[type=submit] {
+    width: 100%;
+  background-color: #04AA6D;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.tasiyici input[type=submit]:hover {
+  background-color: #45a049;
+}
+
+.tasiyici {
+  border-radius: 5px;
+  background-color: #f2f2f2;
+  padding: 20px;
+}
+
+    </style>
+
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css" >
+
+</head>
+<body>
+    <div id="ustbanner">
+<img src="https://picsum.photos/1500/110" alt="">
+
+    </div>
+	<div id="ustlinkler">
+		
+		<ul class="menu">
+			<li><a href="menuler.html">ANASAYFA</a></li>
+			<li><a href="#">PROJELER</a></li>
+			<li><a href="#">REFERANSLAR</a></li>
+			<li><a href="#">HAKKINDA</a></li>
+			<li><a href="iletisim.html">İLETİŞİM</a></li>
+		</ul>
+		<form action="">
+			<input type="text" name="" id="" placeholder="arama yapınız...">
+			
+ 
+			<button><i class="fa fa-search"></i></button>
+		</form>
+		<hr>
+		</div>
+	<div id="orta">
+
+<div id="ortasol">
+
+
+
+	
+    <ul class="menu">
+        <li><a href="#">ANASAYFA</a></li>
+        <li><a href="#">PROJELER</a></li>
+        <li><a href="#">REFERANSLAR</a></li>
+        <li><a href="#">HAKKINDA</a></li>
+        <li><a href="#">İLETİŞİM</a></li>
+    </ul>
+</div>
+<div id="ortabolum">
+    <h3>İletişim Formu</h3>
+    <div class="tasiyici">
+        <form action="/action_page.php">
+        <label for="ad">Adınız:</label>
+        <input type="text" id="fname" name="adi" placeholder="Adınızı Giriniz...">
+        <label for="lastname">Soyadınız</label>
+        <input type="text" id="lname" name="soyad" placeholder="Soyadı giriniz...">
+        <label for="sehir">Şehir</label>
+        <select id="country" name="country">
+            <option value="ank">Ankara</option>
+            <option value="izm">İzmir</option>
+            <option value="brs">Bursa</option>
+        </select>
+    <label for="subject">Konu:</label>
+    <textarea id="subject" name="subject" placeholder="Birşeyler yazın.." style="height:200px"></textarea>
+    <input type="submit" value="Gönder">
+  </form>
+</div>
+
+	
+	
+		
+	
+			
+
+
+</div>
+<div id="ortasag">
+
+</div>
+<div id="alt">
+
+</div>
+</div>
+</body>
+</html>
